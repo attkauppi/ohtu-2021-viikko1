@@ -78,8 +78,7 @@ class TestVarasto(unittest.TestCase):
         
         # Oletuksena on, että varastossa on 0, kun sinne
         # on lisätty 2 ja kaikki on viety.
-        #FIXME: Rikottu testi, vaihda takaisin nollaan
-        exp_result = 5
+        exp_result = 0
 
         self.varasto.ota_varastosta(100)
         self.assertAlmostEqual(exp_result, self.varasto.saldo)
